@@ -10,6 +10,6 @@ import (
 func main(){
 	r := router.Gerar()
 
-	
+	fmt.Println("Rodando na porta 5000")
 	log.Fatal(http.ListenAndServe(":5000",r))
 }
