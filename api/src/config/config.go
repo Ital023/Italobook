@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	stringConexaoBanco = ""
+	StringConexaoBanco = ""
 	Porta              = 0
 )
 
