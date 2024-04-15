@@ -113,7 +113,7 @@ func AtualizarUsuario(w http.ResponseWriter, r *http.Request){
 	}
 
 	if usuarioID != usuarioIDNoToken {
-		respostas.Erro(w, http.StatusForbidden, erro)
+		respostas.Erro(w, http.StatusForbidden, errors.New("Não é possível alterar informações que não sejam suas"))
 		return
 	}
 
