@@ -36,6 +36,46 @@ Desenvolvi este módulo em GoLang para integrar-se à minha própria rede social
   </ul>
 </details>
 
+<details> 
+<summary> 1.1 Version</summary>
+  
+  <ul>
+    
+  ## Funcionalidades
+  - [x] CRUD básico
+  - [x] Validações de JSON e atributos do usuário 
+  - [x] Tratamento de erros
+  - [x] Persistência no SGBD
+  - [x] Autenticação JWT
+  - [x] Middlewares
+  - [x] Validação de ações do usuário quando autenticado   
+
+  ## 🛣️ Rotas 
+  
+  ```
+  /usuarios
+  -GET -> localhost:5000/usuarios?usuario=nome (pesquisa pelo nome ou nick do usuario) <br>
+  -POST -> localhost:5000/usuarios (recebe o body do request) <br>
+  -PUT -> localhost:5000/{usuarioID} (Apartir do ID é possível alterar as informações do usuário como nome, nick, email) <br>
+  -DELETE -> localhost:5000/{usuarioID} (Apartir do ID, o usuário correspondente é apagado do DB)
+
+  /login
+  -POST -> localhost:5000/login (Recebe pelo body request o email e senha para gerar o token de autenticação)
+ ```
+
+## :arrows_counterclockwise: Dependências
+```github.com/joho/godotenv```: go get github.com/joho/godotenv <a href="https://github.com/joho/godotenv">[how-to-install]</a><br>
+```github.com/gorilla/mux```: go get github.com/gorilla/mux <a href="https://github.com/gorilla/mux">[how-to-install]</a><br>
+```github.com/go-sql-driver/mysql```: go get github.com/go-sql-driver/mysql <a href="https://github.com/go-sql-driver/mysql">[how-to-install]</a><br>
+```github.com/badoux/checkmail```: go get github.com/badoux/checkmail <a href="https://github.com/badoux/checkmail">[how-to-install]</a><br>
+```github.com/dgrijalva/jwt-go``` go get github.com/dgrijalva/jwt-go <a href="https://github.com/dgrijalva/jwt-go">[how-to-install]</a><br>
+```golang.org/x/crypto``` go get golang.org/x/crypto <a href="https://golang.org/x/crypto">[how-to-install]</a><br>
+
+
+  </ul>
+</details>
+
+
 ## 🔗 Link de download
 ```gh repo clone Ital023/Italobook``` <a href="https://github.com/Ital023/Italobook/archive/refs/heads/main.zip">[Click here]</a><br>
 
