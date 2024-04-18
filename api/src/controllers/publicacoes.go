@@ -119,7 +119,7 @@ func AtualizarPublicacao(w http.ResponseWriter, r *http.Request) {
 	}
 
 	parametros := mux.Vars(r)
-	publicacaoID, erro := strconv.ParseUint(parametros["publicacaoId"],10 ,64)
+	publicacaoID, erro := strconv.ParseUint(parametros["publicacaoId"], 10, 64)
 	if erro != nil {
 		respostas.Erro(w, http.StatusBadRequest, erro)
 		return
@@ -127,13 +127,12 @@ func AtualizarPublicacao(w http.ResponseWriter, r *http.Request) {
 
 	db, erro := banco.Conectar()
 	if erro != nil {
-		respostas.Erro(w,http.StatusInternalServerError,erro)
-		return	
+		respostas.Erro(w, http.StatusInternalServerError, erro)
+		return
 	}
 	defer db.Close()
 
 	repositorio := repositorios.NovoRepositorioPublicacoes(db)
-
 	publicacaoSalvaNoBanco, erro := repositorio.BuscarPorID(publicacaoID)
 	if erro != nil {
 		respostas.Erro(w, http.StatusInternalServerError, erro)
@@ -141,7 +140,8 @@ func AtualizarPublicacao(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if publicacaoSalvaNoBanco.AutorID != usuarioID {
-		respostas.Erro(w, http.StatusForbidden, errors.New("Não é possível atualizar uma publicação que não é sua"))
+		respostas.Erro(w, http.StatusForbidden, errors.New("Não é possível atualizar uma publicação que não seja sua"))
+		return
 	}
 
 	corpoRequisicao, erro := ioutil.ReadAll(r.Body)

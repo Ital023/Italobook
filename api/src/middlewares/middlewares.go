@@ -3,7 +3,6 @@ package middlewares
 import (
 	"api/src/autenticacao"
 	"api/src/respostas"
-	"fmt"
 	"log"
 	"net/http"
 )
