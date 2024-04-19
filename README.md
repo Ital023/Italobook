@@ -102,7 +102,7 @@ Desenvolvi este módulo em GoLang para integrar-se à minha própria rede social
   ```
   -POST -> localhost:5000/login (recebe o body do request (email, senha)) 
  ```
- ### Usuario - >
+ ### Publicações - >
   ```
   -GET ->
 {
