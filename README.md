@@ -2,6 +2,7 @@
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ## :rocket: Sobre o projeto
 Desenvolvi este módulo em GoLang para integrar-se à minha própria rede social, inspirada no Facebook. Por enquanto, o módulo oferece apenas funcionalidades básicas, como criação, leitura, atualização e exclusão (CRUD) de perfis de usuários. Utilizando as capacidades nativas da linguagem Go e pacotes como net/http e database/sql, construí uma base sólida para a gestão de usuários na minha rede social. Estou planejando expandir este módulo no futuro para incluir uma gama mais ampla de recursos específicos de redes sociais, como interações entre usuários, compartilhamento de conteúdo e notificações.
 
