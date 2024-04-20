@@ -13,31 +13,31 @@
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
 
     <main class="form-signin w-100 m-auto">
-        <form>
+        <form id="formulario-cadastro">
             <h1 class="h3 mb-3 fw-normal">Crie sua conta agora mesmo!</h1>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Italo Miranda">
-                <label for="floatingInput">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Italo Miranda">
+                <label for="nome">Nome</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <label for="email">Email</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Ital023">
-                <label for="floatingInput">Nick</label>
+                <input type="text" class="form-control" id="nick" placeholder="Ital023">
+                <label for="nick">Nick</label>
             </div>
             
             <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Password">
+                <label for="senha">Senha</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Confirme sua senha</label>
+                <input type="password" class="form-control" id="confirmarSenha" placeholder="Password">
+                <label for="confirmarSenha">Confirme sua senha</label>
             </div>
 
             <a href="/" class="text-start my-3">Clique aqui para fazer login</a>
@@ -48,5 +48,7 @@
         </form>
     </main>
 
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/cadastro.js"></script>
 </body>
 </html>
