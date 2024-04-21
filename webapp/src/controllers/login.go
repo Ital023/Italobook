@@ -3,6 +3,7 @@ package controllers
 import (
 	"bytes"
 	"encoding/json"
+	"io/ioutil"
 	"net/http"
 	"webapp/src/respostas"
 )
@@ -25,6 +26,8 @@ func FazerLogin(w http.ResponseWriter, r *http.Request){
 		respostas.JSON(w, http.StatusInternalServerError, respostas.ErroAPI{Erro: erro.Error()})
 		return
 	}
+
+	token, _ := ioutil.ReadAll(response.Body)
 
 	
 }
